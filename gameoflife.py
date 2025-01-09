@@ -28,7 +28,7 @@ def voisinV(grille, x, y):  # fonction pour determiner le nbre de voisins vivant
     return nbre_voisin_vivants
 
 
-def mettre_a_jour_grille(grille):
+def nouvelle_grille(grille):
     # Crée une nouvelle grille qui va contenir les nouvelles valeurs
     grille2 = [[0 for _ in range(len(grille[0]))] for _ in range(len(grille))]
 
@@ -45,3 +45,9 @@ def mettre_a_jour_grille(grille):
                     grille2[x][y] = 1  # La cellule devient vivante
 
     return grille2
+
+
+grille2 = nouvelle_grille(grillejeu)
+print("grille maj")
+for i in grille2:
+    print(i)
