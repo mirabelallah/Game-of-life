@@ -2,7 +2,7 @@ import random
 import time
 
 
-def grille(nb_lignes, nb_colonnes):   # on initialise la grille
+def grille(nb_lignes, nb_colonnes):   # on initialise la grille avec des valeurs aléatoire comprise en tre 0 et 1
     grille = []
     for _ in range(nb_lignes):
         ligne = []
@@ -12,9 +12,9 @@ def grille(nb_lignes, nb_colonnes):   # on initialise la grille
     return grille
 
 
-grillejeu = grille(5, 5)
-for ligne in grillejeu:
-    print(ligne)
+# grillejeu = grille(5, 5)
+# for ligne in grillejeu:
+    # print(ligne)
 
 
 def voisinV(grille, x, y):  # fonction pour determiner le nbre de voisins vivants
@@ -49,10 +49,10 @@ def nouvelle_grille(grille):
     return grille2
 
 
-grille2 = nouvelle_grille(grillejeu)
-print("grille maj")
-for i in grille2:
-    print(i)
+# grille2 = nouvelle_grille(grille)
+# print("grille maj")
+# for i in grille2:
+    # print(i)
 
 
 def jeu_de_la_vie(grille, iterations, pause=1):
